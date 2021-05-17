@@ -1,0 +1,68 @@
+.main {
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+    .about-me {
+        background-color: $white-bg;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        align-items: center;
+
+        > div {
+            padding: 0;
+        }
+
+        .about,
+        .thumb {
+            padding: 30px;
+        }
+
+        .about {
+            .title-2 {
+                color: $title;
+                font-size: 35px;
+                font-weight: bold;
+                .point {
+                    color: $yellow-primary;
+                }
+            }
+
+            .separator {
+                width: 100px;
+                background: $yellow-primary;
+                height: 3px;
+                border: none;
+                border-radius: 50px;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                -ms-border-radius: 50px;
+                -o-border-radius: 50px;
+                margin-bottom: 40px;
+            }
+
+            .text {
+                color: $text;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        .thumb {
+            img {
+                width: 100%;
+                vertical-align: top;
+                height: auto;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+}

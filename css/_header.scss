@@ -1,0 +1,169 @@
+header {
+    background: url(/img/Mauro-Creativo-bg01.jpg) $lila-dark;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    .nav-menu {
+        align-items: center;
+    }
+
+    .logo {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        a {
+            display: inline-block;
+            img {
+                height: 50px;
+                width: auto;
+            }
+        }
+    }
+
+    .menu {
+        ul {
+            list-style: none;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            float: right;
+
+            li {
+                display: inline-block;
+
+                a {
+                    color: $white-text;
+                    display: inline-block;
+                    margin-left: 20px;
+                    padding: 5px 0;
+                    font-size: 15px;text-decoration: none;
+                    border-bottom: 1px solid transparent;
+                    &:hover {
+                        color: $yellow-primary;
+                        border-bottom: 1px solid $yellow-primary;
+                    }
+                    &:link,
+                    &:visited {
+                        color: $white-text;
+                    }
+                    &.current:link,
+                    &.current:visited {
+                        border-bottom: 1px solid $yellow-primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .text-name {
+        padding: 100px 0;
+
+        .hello {
+            color: $white-text;
+            text-align: center;
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            color: $white-text;
+            text-align: center;
+            font-size: 60px;
+            line-height: 60px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            .point {
+                color: $yellow-primary;
+            }
+        }
+
+        .profession {
+            color: $white-text;
+            text-align: center;
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+
+    .separator {
+        width: 100px;
+        background: $yellow-primary;
+        height: 3px;
+        border: none;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        margin: 25px auto;
+    }
+
+    .social-media {
+        text-align: center;
+        p {
+            color: $white-text;
+            font-size: 14px;
+            font-weight: 200;
+            margin-bottom: 10px;
+        }
+
+        .fab {
+            color: $white-text;
+            font-size: 28px;
+            margin: 0 5px;
+        }
+    }
+
+    .icon-scroll,
+    .icon-scroll::before {
+        position: absolute;
+        left: 50%;
+    }
+
+    .icon-scroll {
+        width: 10px;
+        height: 30px;
+        margin-left: -20px;
+        bottom: 50px;
+        margin-top: -35px;
+        box-shadow: inset 0 0 0 1px #fff;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        &::before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            background: #fff;
+            margin-left: -2.5px;
+            top: 8px;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-name: scroll;
+        }
+
+        @keyframes scroll {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(11px);
+                -webkit-transform: translateY(11px);
+                -moz-transform: translateY(11px);
+                -ms-transform: translateY(11px);
+                -o-transform: translateY(11px);
+            }
+        }
+    }
+}
