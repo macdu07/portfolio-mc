@@ -1,68 +1,167 @@
-.main {
-    margin-top: 50px;
-    margin-bottom: 25px;
+.hero {
+    display: flex;
+    align-items: center;
+    background: url(/img/bg-mc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 
-    .about-me {
-        background-color: $white-bg;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-        align-items: center;
-
-        > div {
-            padding: 0;
+    .text-hero {
+        .hello {
+            color: $white;
+            font-size: 28px;
+            line-height: 28px;
+            font-weight: 400;
+            margin-bottom: 10px;
         }
 
-        .about,
-        .thumb {
-            padding: 30px;
-        }
-
-        .about {
-            .title-2 {
-                color: $title;
-                font-size: 35px;
-                font-weight: bold;
-                .point {
-                    color: $yellow-primary;
-                }
-            }
-
-            .separator {
-                width: 100px;
-                background: $yellow-primary;
-                height: 3px;
-                border: none;
-                border-radius: 50px;
-                -webkit-border-radius: 50px;
-                -moz-border-radius: 50px;
-                -ms-border-radius: 50px;
-                -o-border-radius: 50px;
-                margin-bottom: 40px;
-            }
-
-            .text {
-                color: $text;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 20px;
+        .name {
+            color: $white;
+            font-size: 60px;
+            line-height: 60px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            .point {
+                color: $yellow-primary;
             }
         }
 
-        .thumb {
-            img {
-                width: 100%;
-                vertical-align: top;
-                height: auto;
-                border-radius: 10px;
-                -webkit-border-radius: 10px;
-                -moz-border-radius: 10px;
-                -ms-border-radius: 10px;
-                -o-border-radius: 10px;
-                box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.4);
+        .profession {
+            color: $white;
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+    }
+
+    .separator {
+        border: none;
+        height: 3px;
+        background-color: $yellow-primary;
+        opacity: inherit;
+        width: 100px;
+        margin: 25px auto;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+
+    .social-media {
+        text-align: center;
+        display: block;
+        .follow {
+            color: $white;
+            font-size: 14px;
+            font-weight: 200;
+        }
+
+        .facebook,
+        .instagram,
+        .github {
+            color: $white;
+            font-size: 25px;
+            margin: 0;
+        }
+    }
+
+/*Icon Scroll*/
+    .icon-scroll,
+    .icon-scroll::before {
+        position: absolute;
+        left: 50%;
+    }
+
+    .icon-scroll {
+        width: 10px;
+        height: 30px;
+        margin-left: -20px;
+        bottom: 50px;
+        margin-top: -35px;
+        box-shadow: inset 0 0 0 1px #fff;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        &::before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            background: #fff;
+            margin-left: -2.5px;
+            top: 8px;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-name: scroll;
+        }
+
+        @keyframes scroll {
+            0% {
+                opacity: 1;
             }
+
+            100% {
+                opacity: 0;
+                transform: translateY(11px);
+                -webkit-transform: translateY(11px);
+                -moz-transform: translateY(11px);
+                -ms-transform: translateY(11px);
+                -o-transform: translateY(11px);
+            }
+        }
+    }
+}
+
+.about-me {
+    background-color: $white;
+
+    > div {
+        padding: 0;
+        margin: 0;
+    }
+
+    .info-about {
+        padding: 30px;
+
+        .title-2 {
+            font-size: 35px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            .point {
+                color: $yellow-primary;
+            }
+        }
+
+        .separator {
+            border: none;
+            height: 3px;
+            background-color: $yellow-primary;
+            opacity: inherit;
+            width: 100px;
+            margin-top: 5px;
+            margin-bottom: 30px;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+        }
+    }
+
+    .thumb {
+        padding: 30px;
+        img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
         }
     }
 }

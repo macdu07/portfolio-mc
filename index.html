@@ -5,69 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mauricio Correa - Diseñador Gráfico y Web</title>
-    <link rel="stylesheet" href="bootstrap/bootstrap-grid.min.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4e4c2fa2fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="row nav-menu">
-                <div class="col-6 logo">
-                    <a href="#"><img src="img/mc-logo-white.svg" alt=""></a>
+        <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="img/mc-logo-white-a.svg" alt="" width="40" height="auto">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link" href="#about-me">Acerca de</a>
+                  <a class="nav-link" href="#">Works</a>
+                  <a class="nav-link" href="#">Contacto</a>
                 </div>
-
-                <div class="col-6">
-                    <nav class="menu">
-                        <ul class="nav">
-                            <li><a href="#" class="current">Inicio</a></li>
-                            <li><a href="#about-me">Acerca de</a></li>
-                            <li><a href="#">Works</a></li>
-                            <li><a href="#">Contacto</a></li>
-                        </ul>
-                    </nav>
-                </div>
+              </div>
             </div>
+        </nav>
+    </header>
 
-            <div class="row text-name">
-                <div class="col-12">
-                    <p class="hello">Hola, soy</p>
-                    <h1 class="name">Mauricio Correa<span class="point">.</span></h1>
-                    <p class="profession">Diseñador Gráfico & Web</p>
-                </div>
-                <hr class="separator">
-                <div class="social-media">
-                    <p>Síguenos en:</p>
-                    <a href="#"><i class="fab fa-facebook-square facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram instagram"></i></a>
-                    <a href="#"><i class="fab fa-github-square github"></i></a>
-                </div>
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="row text-hero">
+                <p class="text-center hello">Hola, soy</p>
+                <h1 class="text-center name">Mauricio Correa<span class="point">.</span></h1>
+                <p class="text-center profession">Diseñador Gráfico & Web</p>
+            </div>
+            <hr class="separator">
+            <div class="row social-media">
+                <p class="follow">Sígueme en:</p>
+                <a href="https://www.facebook.com/MauricioCorreaD/" target="_blank"><i class="fab fa-facebook-square facebook"></i></a>
+                <a href="https://www.instagram.com/mcorread/" target="_blank"><i class="fab fa-instagram instagram"></i></a>
+                <a href="https://github.com/macdu07" target="_blank"><i class="fab fa-github-square github"></i></a>
             </div>
 
             <div class="row">
                 <div class="icon-scroll"></div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <div class="container">
-        <div class="row">
-            <section class="main col-12">
-                <div id="about-me" class="row about-me">
-                    <div class="col-8 about">
-                        <h2 class="title-2">Sobre Mi<span class="point">.</span></h2>
-                        <hr class="separator">
-                        <p class="text">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora laboriosam itaque consequatur velit mollitia amet eligendi modi sunt. Fugiat officia deleniti quibusdam excepturi rem molestiae. Numquam necessitatibus voluptas nisi, debitis ratione temporibus rem cumque iste at quidem doloribus, non voluptatem vel? Nostrum, aperiam pariatur, cumque sed fuga quam laudantium blanditiis debitis voluptas quae soluta dolores alias itaque? Tenetur officiis natus corporis repellendus voluptatibus, vero a impedit, consequuntur vel ipsam aut ad eaque totam accusamus autem, aperiam iure magni alias quisquam commodi modi architecto. Voluptatem, nisi possimus? Libero, praesentium inventore aut odio reprehenderit impedit ad ipsam quis assumenda! Maxime, commodi.
-                        </p>
-                    </div>
-                    <div class="col-4 thumb">
-                        <img src="img/Mauricio-Correa.jpg" alt="Mauro Creativo, diseño gráfico y web">
-                    </div>
+    <section id="about-me" class="about-me-sect my-4">
+        <div class="container">
+            <div class="row about-me rounded mx-0">
+                <div class="col-md-8 col-sm-12 info-about align-self-center">
+                    <h2 class="title-2">Sobre mi<span class="point">.</span></h2>
+                    <hr class="separator">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus accusantium repellat autem deleniti harum eos iste quaerat, impedit, omnis temporibus numquam soluta. Nostrum commodi nulla quis fugiat id maxime, culpa eos? Officia quae minima porro? Deserunt dicta explicabo quas expedita autem porro, quasi excepturi illo temporibus, est inventore a adipisci possimus eveniet maiores? Iure veritatis facere cupiditate perferendis ullam similique distinctio commodi quis reiciendis, sit, omnis minima nesciunt quam. Molestias, iure earum obcaecati dolore ipsam nostrum laborum, atque facere eum accusantium maiores delectus excepturi exercitationem recusandae fugiat consequatur quos, molestiae illum itaque voluptatum quis ex aliquam nesciunt? Quia, veritatis!
+                    </p>
                 </div>
-            </section>
+                <div class="col-md-4 col-sm-12 thumb">
+                    <img class="rounded" src="img/Mauricio-Correa.jpg" alt="Mauricio Correa - Mauro Creativo">
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
